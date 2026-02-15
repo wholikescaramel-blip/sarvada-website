@@ -13,11 +13,32 @@ export default function GetAQuote() {
     vision: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic here
-    console.log('Form submitted:', formData);
-  };
+ try {
+  const response = await fetch ("https://formspree.io/f/mbdaobzy", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+     },
+  body: JSON.stringify(formData)
+});
+   if (response.ok) {
+      alert("Thank you! We'll contact you soon.");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        eventDate: "",
+        vision: ""
+      });
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    alert("Error submitting form.");
+  }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
