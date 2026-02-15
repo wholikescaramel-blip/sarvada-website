@@ -205,7 +205,7 @@ export default function OurServices() {
       </div>
 
       {/* Wave Shape at Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden" style={{ height: '120px' }}>
+      <div className="hidden md:block absolute bottom-0 left-0 right-0 overflow-hidden" style={{ height: '120px' }}>
         <svg 
           viewBox="0 0 1440 120" 
           fill="none" 
