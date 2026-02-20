@@ -45,7 +45,7 @@ export default function Footer() {
             color: "#38322f"
           }}
         >
-          © 2026 Sarvada Events. All rights reserved.
+          © 2026 Sarvada Events.
         </p>
       </div>
     </footer>
