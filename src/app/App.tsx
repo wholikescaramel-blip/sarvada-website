@@ -4,6 +4,7 @@ import EventAesthetics from "./components/EventAesthetics";
 import StoriesInStyle from "./components/StoriesInStyle";
 import AboutUs from "./components/AboutUs";
 import GetAQuote from "./components/GetAQuote";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <StoriesInStyle />
       <AboutUs />
       <GetAQuote />
+      <Footer />
     </div>
   );
 }
