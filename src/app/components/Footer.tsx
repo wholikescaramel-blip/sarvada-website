@@ -1,4 +1,4 @@
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -18,6 +18,15 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="flex justify-center gap-6 mb-6 text-[#b55268]">
+          <a
+            href="https://wa.me/916290383337"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-70 transition-opacity"
+          >
+            <MessageCircle size={22} />
+          </a>
+          
           <a
             href="https://instagram.com/sarvada.events_"
             target="_blank"
